@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+</head>
+
+<body>
+    {% extends 'layout.html' %} {% block content %}
+    <div class="container">
+        <h1>Text Analyzer</h1>
+        <form action="https://thirtydaysofpython-v1.herokuapp.com/post" method="POST">
+            <div>
+                <textarea rows="25" name="content" autofocus></textarea>
+            </div>
+            <div>
+                <input type="submit" class="btn" value="Process Text" />
+            </div>
+        </form>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>
